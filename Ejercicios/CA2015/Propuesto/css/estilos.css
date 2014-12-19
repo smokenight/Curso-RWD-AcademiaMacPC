@@ -1,0 +1,537 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  background: url(../img/background.png) no-repeat center center fixed;
+  background-size: cover;
+  /*font-size: 62.5%;*/
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif, "Arial Narrow";
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+li {
+  line-height: 20px;
+}
+
+p {
+  margin: 0;
+}
+
+video {
+  width: 100%;
+  height: auto;
+}
+
+h1, h2, p {
+  color: #555;
+}
+
+#contenedor {
+  background: #FFF;
+  width: 1020px;
+  margin: 0 auto 20px auto;
+  padding: 0 30px 30px 30px;
+  overflow: hidden;
+}
+
+header {
+  width: 960px;
+  position: fixed;
+  z-index: 9999;
+  overflow: hidden;
+  background: url(../img/header-large-background.jpg);
+  padding: 30px;
+  transition: all 0.4s ease;
+}
+
+header.sticky {
+  height: 120px;
+  padding: 10px;
+  transition: all 0.4s ease;
+}
+
+header.sticky #logo {
+  width: 100px;
+}
+
+header.sticky h1 {
+  font-size: 30px;
+}
+
+header.sticky nav {
+  margin-top: 30px;
+}
+
+header.sticky #header_principal {
+  width: 800px;
+}
+
+#logo {
+  width: 150px;
+  float: left;
+}
+
+#logo img {
+  width: 100%;
+}
+
+#header_principal {
+  width: 750px;
+  float: left;
+}
+
+hgroup {
+  width: 100%;
+  text-align: center;
+}
+
+hgroup h1 {
+  font-size: 45px;
+  margin: 0;
+  font-weight: normal;
+  color: #FFF;
+}
+
+header nav {
+  width: 700px;
+  margin-left: 50px;
+  margin-top: 80px;
+  text-align: center;
+}
+
+header nav ul {
+  list-style: none;
+  overflow: hidden;
+  padding: 0;
+}
+
+header nav ul li {
+  float: left;
+  margin-left: 2rem;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1rem;
+  letter-spacing: 1px;
+  outline: none !important;
+}
+
+section {
+  margin-top: 30px;
+  overflow: hidden;
+}
+
+section#seccion_contador {
+  margin-top: 220px;
+  clear: both;
+}
+
+ul#countdown {
+  text-align: center;
+}
+
+ul#countdown li {
+  color: #fff;
+  display: inline-block;
+  margin-right: 18px;
+  width: 80px;
+  height: 80px;
+  text-align: center;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  background: #1e5799; /* Old browsers */
+  background: -moz-linear-gradient(top,  #1e5799 0%, #2989d8 50%, #207cca 51%, #7db9e8 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#1e5799), color-stop(50%,#2989d8), color-stop(51%,#207cca), color-stop(100%,#7db9e8)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top,  #1e5799 0%,#2989d8 50%,#207cca 51%,#7db9e8 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top,  #1e5799 0%,#2989d8 50%,#207cca 51%,#7db9e8 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top,  #1e5799 0%,#2989d8 50%,#207cca 51%,#7db9e8 100%); /* IE10+ */
+  background: linear-gradient(to bottom,  #1e5799 0%,#2989d8 50%,#207cca 51%,#7db9e8 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#7db9e8',GradientType=0 ); /* IE6-9 */
+  -webkit-box-shadow: 1px 1px 4px rgba(50, 50, 50, 0.3);
+  -moz-box-shadow: 1px 1px 4px rgba(50, 50, 50, 0.3);
+  box-shadow: 1px 1px 4px rgba(50, 50, 50, 0.3);
+}
+
+ul#countdown li span {
+  font-size: 42px;
+  font-weight: bold;
+  color: #fff;
+  position: relative;
+  text-shadow: 1px 1px 2px rgba(150, 150, 150, 1);
+}
+
+ul#countdown li p.timeRefDays,
+ul#countdown li p.timeRefHours,
+ul#countdown li p.timeRefMinutes,
+ul#countdown li p.timeRefSeconds {
+  color: #fff;
+  text-shadow: 1px 1px 2px rgba(150, 150, 150, 1);
+  margin-bottom: 12px;
+  font-size: 12px;
+}
+
+.texto_contador {
+  font-size: 40px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#contenedor_video {
+  width: 80%;
+  margin: 20px auto;
+}
+
+h2.titulo_seccion {
+  font-size: 1.5rem;
+  line-height: 1.5625rem;
+  padding: 1.25rem 0 0.625rem;
+  margin: 0;
+  position: relative;
+}
+
+.titulo_seccion:after {
+  background: #ddd;
+  bottom: 0;
+  content: "";
+  width: 100%;
+  height: 1px;
+  left: 0rem;
+  position: absolute;
+  right: 0.625rem;
+}
+
+section#seccion_equipos ul {
+  margin: 1.25rem -0.3125rem 0 0;
+  overflow: hidden;
+}
+
+section#seccion_equipos ul > li {
+  width: 25%;
+  padding: 0 0.9375rem 0.625rem 0.625rem;
+  float: left;
+  overflow: hidden;
+}
+
+section#seccion_equipos ul > li:nth-of-type(4n +1) {
+  clear: both;
+}
+
+section#seccion_equipos a {
+  background-image: url('../img/team-large-background.png');
+  background-size: 100%;
+  padding: 0.75rem 0 0.75rem 0.9375rem;
+  width: 100%;
+  display: block;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+}
+
+section#seccion_equipos [class^="svg"] {
+  float: left;
+  width: 32%;
+}
+
+section#seccion_equipos h3 {
+  color: #fff;
+  font-size: 1.125rem;
+  font-weight: normal;
+  line-height: 4.125rem;
+  margin: 0;
+  padding: 0 0 0 32%;
+  text-transform: uppercase;
+}
+
+section#seccion_equipos abbr {
+  position: relative;
+  font-size: 1rem;
+  color: #fff;
+  border-bottom: 0;
+  cursor: pointer;
+  display: none;
+}
+
+.svg-flag-ARG,.svg-flag-BOL,.svg-flag-BRA,.svg-flag-CHI,.svg-flag-COL,.svg-flag-ECU,.svg-flag-JAM,.svg-flag-MEX,.svg-flag-PAR,.svg-flag-PER,.svg-flag-URU,.svg-flag-VEN {
+  background-image: url('../img/equipos/sprite_equipos.svg');
+  background-repeat: no-repeat;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  text-indent: -9999px;
+  text-align: left;
+  font-size: .5rem;
+  line-height: .5rem;
+  color: rgba(255,255,255,0);
+}
+
+.svg-flag-ARG:before,.svg-flag-BOL:before,.svg-flag-BRA:before,.svg-flag-CHI:before,.svg-flag-COL:before,.svg-flag-ECU:before,.svg-flag-JAM:before,.svg-flag-MEX:before,.svg-flag-PAR:before,.svg-flag-PER:before,.svg-flag-URU:before,.svg-flag-VEN:before {
+  content: "";
+  float: left;
+}
+
+.svg-flag-ARG:after,.svg-flag-BOL:after,.svg-flag-BRA:after,.svg-flag-CHI:after,.svg-flag-COL:after,.svg-flag-ECU:after,.svg-flag-JAM:after,.svg-flag-MEX:after,.svg-flag-PAR:after,.svg-flag-PER:after,.svg-flag-URU:after,.svg-flag-VEN:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.svg-flag-ARG {
+  background-position: 50% 0.24013314%;
+  background-size: 120%;
+}
+
+.svg-flag-ARG:before {
+  padding-bottom: 100.5%;
+}
+
+.svg-flag-BOL {
+  background-position: 50% 3.17522022%;
+  background-size: 120%;
+}
+
+.svg-flag-BOL:before {
+  padding-bottom: 100.5%;
+}
+
+.svg-flag-BRA {
+  background-position: 50% 6.10959247%;
+  background-size: 120%;
+}
+
+.svg-flag-BRA:before {
+  padding-bottom: 100%;
+}
+
+.svg-flag-CHI {
+  background-position: 50% 9.03214483%;
+  background-size: 120%;
+}
+
+.svg-flag-CHI:before {
+  padding-bottom: 100%;
+}
+
+.svg-flag-COL {
+  background-position: 50% 11.95612389%;
+  background-size: 120%;
+}
+
+.svg-flag-COL:before {
+  padding-bottom: 100.5%;
+}
+
+.svg-flag-ECU {
+  background-position: 50% 14.88942686%;
+  background-size: 120%;
+}
+
+.svg-flag-ECU:before {
+  padding-bottom: 100%;
+}
+
+.svg-flag-JAM {
+  background-position: 50% 17.81411926%;
+  background-size: 120%;
+}
+
+.svg-flag-JAM:before {
+  padding-bottom: 100.5%;
+}
+
+.svg-flag-MEX {
+  background-position: 50% 20.74670889%;
+  background-size: 120%;
+}
+
+.svg-flag-MEX:before {
+  padding-bottom: 100%;
+}
+
+.svg-flag-PAR {
+  background-position: 50% 23.67211463%;
+  background-size: 120%;
+}
+
+.svg-flag-PAR:before {
+  padding-bottom: 100.5%;
+}
+
+.svg-flag-PER {
+  background-position: 50% 26.60720171%;
+  background-size: 100%;
+}
+
+.svg-flag-PER:before {
+  padding-bottom: 100.5%;
+}
+
+.svg-flag-URU {
+  background-position: 50% 29.53872058%;
+  background-size: 120%;
+}
+
+.svg-flag-URU:before {
+  padding-bottom: 100%;
+}
+
+.svg-flag-VEN {
+  background-position: 50% 32.46127294%;
+  background-size: 120%;
+}
+
+.svg-flag-VEN:before {
+  padding-bottom: 100%;
+}
+
+section#seccion_sedes ul {
+  margin: 1.25rem -0.3125rem 0 0;
+  overflow: hidden;
+}
+
+section#seccion_sedes ul > li {
+  width: 117px;
+  float: left;
+  overflow: hidden;
+}
+
+section#seccion_sedes a {
+  padding: 10px;
+  width: 100%;
+  display: block;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+}
+
+section#seccion_sedes #tabla_campeones {
+  margin: 1.25rem -0.3125rem 0 0;
+  background: #EBF5FF;
+  border-collapse: collapse;
+  font-size: 100%;
+  overflow: hidden;
+}
+
+section#seccion_sedes #tabla_campeones td {
+  padding: 10px;
+}
+
+#tabla_campeones td {
+  padding: 10px;
+}
+
+section#seccion_galeria .slider-wrapper { 
+	width: 80%; 
+	margin: 1.25rem auto;
+}
+
+section#seccion_redes #contenido_redes {
+  margin: 1.25rem -0.3125rem 0 0;
+  overlow: hidden;
+}
+
+#contenido_redes .twitter {
+  width: 40%;
+  height: 400px;
+  float: left;
+}
+
+#contenido_redes .facebook {
+  width: 40%;
+  height: 400px;
+  margin-left: 20%;
+  float: left;
+  /*background-color: #CCC;*/
+}
+
+footer {
+  width: 100%;
+  height: 60px;
+  margin-top: 20px;
+  background: url(../img/header-large-background.jpg) 0 -214px;
+  overflow: hidden;
+  clear: both;
+}
+
+footer #redes {
+  width: 50%;
+  text-align: center;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+footer #redes ul {
+  overflow: hidden;
+  padding-left: 0;
+  display: inline-block;
+  list-style-type: none;
+  margin: 20px auto;
+}
+
+footer #redes ul li {
+  float: left;
+  display: inline-block;
+}
+
+footer #redes ul li a {
+  text-align: center;
+  color: white;
+  border-right: 1px solid #0099ff;
+  padding: 0 15px;
+  display: block;
+  text-decoration: none;
+}
+
+footer #redes ul li a:hover {
+  text-decoration: none;
+  color: #0099ff;
+}
+
+footer #redes ul li:last-child a {
+  border-right: none;
+}
+
+#icono_twitter_footer {
+  width: 20px;
+  height: 20px;
+  display: block;
+  background: url('../img/icono_twitter_footer.png') no-repeat 50% 20%;
+}
+
+#icono_facebook_footer {
+  width: 20px;
+  height: 20px;
+  display: block;
+  background: url('../img/icono_facebook_footer.png') no-repeat 50% 20%;
+}
+
+.back-to-top {
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  bottom: 2rem;
+  right: 0.5rem;
+  text-decoration: none;
+  color: #000000;
+  background: url('../img/back-to-top.png') no-repeat center center;
+  background-size: cover;
+  display: none;
+  text-indent: -1000px;
+  outline: none;
+}
+
+.back-to-top:hover {    
+  opacity: 0.5;
+}
